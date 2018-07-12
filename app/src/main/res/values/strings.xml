@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EQuiz</string>
+    <string name="nama">Nama</string>
+    <string name="nama_pengguna">Nama pengguna</string>
+    <string name="kata_sandi">Kata sandi</string>
+    <string name="daftar">Daftar</string>
+    <string name="masuk">Masuk</string>
+    <string-array name="level">
+        <item>Mahasiswa</item>
+        <item>Dosen</item>
+    </string-array>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.eputra.equiz.UbahQuizActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilIDQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+            <EditText
+                android:id="@+id/etIDQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Quiz"
+                android:inputType="textPersonName"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilJudul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/tilIDQuiz"
+            app:layout_constraintRight_toRightOf="@+id/tilIDQuiz"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tilIDQuiz">
+            <EditText
+                android:id="@+id/etJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul"
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilJumlah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/tilJudul"
+            app:layout_constraintRight_toRightOf="@+id/tilJudul"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tilJudul">
+            <EditText
+                android:id="@+id/etJumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah soal"
+                android:inputType="number"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilWaktuPengerjaan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/tilJumlah"
+            app:layout_constraintRight_toRightOf="@+id/tilJumlah"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tilJumlah">
+            <EditText
+                android:id="@+id/etWaktuPengerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Waktu pengerjaan soal (menit)"
+                android:inputType="number"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilTanggalAkhirPengumpulan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/tilWaktuPengerjaan"
+            app:layout_constraintRight_toRightOf="@+id/tilWaktuPengerjaan"
+            android:layout_marginTop="8dp"
+            android:focusableInTouchMode="false"
+            app:layout_constraintTop_toBottomOf="@+id/tilWaktuPengerjaan">
+            <EditText
+                android:id="@+id/etTanggalAkhirPengumpulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal akhir pengumpulan"
+                android:focusableInTouchMode="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilJamlAkhirPengumpulan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/tilTanggalAkhirPengumpulan"
+            app:layout_constraintRight_toRightOf="@+id/tilTanggalAkhirPengumpulan"
+            android:layout_marginTop="8dp"
+            android:focusableInTouchMode="false"
+            app:layout_constraintTop_toBottomOf="@+id/tilTanggalAkhirPengumpulan">
+            <EditText
+                android:id="@+id/etJamAkhirPengumpulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam akhir pengumpulan"
+                android:focusableInTouchMode="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUbahQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Ubah Quiz"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilJamlAkhirPengumpulan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

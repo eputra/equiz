@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.eputra.equiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".BuatQuizActivity" />
+        <activity android:name=".DosenActivity" />
+        <activity android:name=".MahasiswaActivity" />
+        <activity android:name=".UbahQuizActivity" />
+        <activity android:name=".DataQuizActivity" />
+        <activity android:name=".MengerjakanQuizActivity" />
+        <activity android:name=".BuatSoalActivity" />
+        <activity android:name=".DataQuizDosenActivity" />
+        <activity android:name=".UbahSoalActivity" />
+        <activity android:name=".NilaiActivity" />
+        <activity android:name=".NilaiQuizActivity" />
+        <activity android:name=".ReviewJawabanActivity" />
+        <activity android:name=".ReviewJawabanMahasiswaActivity" />
+        <activity android:name=".NoUbahSoalActivity"></activity>
+    </application>
+
+</manifest>
